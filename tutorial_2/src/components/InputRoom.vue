@@ -26,10 +26,10 @@ export default {
       id: ''
     });
     const connection = () => {
+      proxy.socket.emit('create or join', room.name);
       proxy.eventBus.emit('connection', room);
     }
     return{
-      proxy,
       room,
       connection
     }

@@ -23,9 +23,8 @@ export default {
       text.value = "[알림] '" + room.name + "'에 '" +room.id+ "'(으)로 입장하셨습니다.";
       
     });
-        
+
     return{
-      proxy,
       text
     }
   }
